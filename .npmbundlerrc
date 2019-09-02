@@ -2,9 +2,9 @@
   "sources": ["src", "assets"],
   "rules": [
     {
-      "test": "\\.css$",
+      "test": "\\.scss$",
       "exclude": "node_modules",
-      "use": ["style-loader"]
+      "use": ["sass-loader", "style-loader"]
     },
     {
       "test": "^assets/",
