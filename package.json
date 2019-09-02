@@ -5,6 +5,7 @@
   "devDependencies": {
     "liferay-npm-bundler": "2.12.0",
     "liferay-npm-build-support": "2.12.0",
+    "liferay-npm-bundler-loader-copy-loader": "2.12.0",
     "liferay-npm-bundler-loader-style-loader": "2.12.0",
     "copy-webpack-plugin": "4.6.0",
     "webpack": "4.29.6",
@@ -20,8 +21,7 @@
     "react-dom": "16.8.6"
   },
   "scripts": {
-    "build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
-    "copy-assets": "lnbs-copy-assets",
+    "build": "babel --source-maps -d build src && liferay-npm-bundler",
     "deploy": "npm run build && lnbs-deploy",
     "start": "lnbs-start"
   },

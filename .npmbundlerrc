@@ -1,10 +1,15 @@
 {
-  "sources": ["src"],
+  "sources": ["src", "assets"],
   "rules": [
     {
       "test": "\\.css$",
       "exclude": "node_modules",
       "use": ["style-loader"]
+    },
+    {
+      "test": "^assets/",
+      "exclude": "node_modules",
+      "use": ["copy-loader"]
     }
   ],
   "create-jar": {
