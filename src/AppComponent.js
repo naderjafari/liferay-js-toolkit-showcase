@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Button from "./Button";
+import ChartWithState from "./ChartWithState";
 
 export default class extends React.Component {
   render() {
@@ -10,6 +11,10 @@ export default class extends React.Component {
         <p>
           <div> A Button from the project:</div>
           <Button />
+        </p>
+        <p>
+          <div>A Chart from Clay:</div>
+          <ChartWithState />
         </p>
         <div>
           <span className="tag">Portlet Namespace:</span>

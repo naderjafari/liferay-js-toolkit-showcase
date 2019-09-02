@@ -1,5 +1,9 @@
 {
   "sources": ["src", "assets"],
+  "exclude": {
+    "*": ["**/rollup.config.js"],
+    "billboard.js@1.10.2": ["src/plugin/Plugin.js"]
+  },
   "rules": [
     {
       "test": "\\.scss$",
@@ -22,6 +26,11 @@
           }
         }
       ]
+    },
+    {
+      "test": "\\.css$",
+      "include": "node_modules",
+      "use": ["style-loader"]
     }
   ],
   "create-jar": {

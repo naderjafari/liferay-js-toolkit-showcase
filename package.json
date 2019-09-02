@@ -19,6 +19,7 @@
     "sass": "^1.22.9"
   },
   "dependencies": {
+    "@clayui/charts": "^3.0.0-milestone.2",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
