@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 import Button from "./Button";
 import ChartWithState from "./ChartWithState";
+import fileJson from "./file.json";
 
 export default class extends React.Component {
   render() {
@@ -15,6 +16,10 @@ export default class extends React.Component {
         <p>
           <div>A Chart from Clay:</div>
           <ChartWithState />
+        </p>
+        <p>
+          <div>A JSON file from the project:</div>
+          <pre>{JSON.stringify(fileJson, null, 2)}</pre>
         </p>
         <div>
           <span className="tag">Portlet Namespace:</span>
