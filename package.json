@@ -7,6 +7,7 @@
     "liferay-npm-build-support": "2.12.0",
     "liferay-npm-bundler-loader-babel-loader": "2.12.0",
     "liferay-npm-bundler-loader-copy-loader": "2.12.0",
+    "liferay-npm-bundler-loader-css-loader": "2.12.0",
     "liferay-npm-bundler-loader-json-loader": "2.12.0",
     "liferay-npm-bundler-loader-sass-loader": "2.12.0",
     "liferay-npm-bundler-loader-style-loader": "2.12.0",
