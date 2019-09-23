@@ -1,9 +1,13 @@
 {
-  "liferayDir": "/opt/liferay",
+  "liferayDir": "C:\\Users\\Jafari\\Desktop\\Liferay7\\Liferay WS 713\\bundles",
   "webpack": {
     "rules": [
       {
-        "test": "src\\/.*\\.js$",
+        "test": "\\.(scss|css)$",
+        "use": ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        "test": "\\.js$",
         "use": "babel-loader"
       }
     ]
